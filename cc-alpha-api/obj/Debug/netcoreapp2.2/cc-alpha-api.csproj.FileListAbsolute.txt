@@ -1,0 +1,14 @@
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/bin/Debug/netcoreapp2.2/cc-alpha-api.deps.json
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/bin/Debug/netcoreapp2.2/cc-alpha-api.runtimeconfig.json
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/bin/Debug/netcoreapp2.2/cc-alpha-api.runtimeconfig.dev.json
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/bin/Debug/netcoreapp2.2/cc-alpha-api.dll
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/bin/Debug/netcoreapp2.2/cc-alpha-api.pdb
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.csprojAssemblyReference.cache
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.csproj.CoreCompileInputs.cache
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.RazorAssemblyInfo.cache
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.RazorAssemblyInfo.cs
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.AssemblyInfoInputs.cache
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.AssemblyInfo.cs
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.RazorTargetAssemblyInfo.cache
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.dll
+/Users/chris/Projects/cc-alpha-api/cc-alpha-api/obj/Debug/netcoreapp2.2/cc-alpha-api.pdb
