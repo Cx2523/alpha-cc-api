@@ -14,7 +14,7 @@ namespace cc_alpha_api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2", "value3", "value4", "value5", "value6", "value7", "value8" };
+            return new string[] { "string1", "string2", "string3", "string4", "string5", "string6", "string7", "string8" };
         }
 
         // GET api/values/5
