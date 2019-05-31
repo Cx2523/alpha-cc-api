@@ -30,7 +30,7 @@ namespace cc_alpha_api
             // Use SQL Database if in Azure, otherwise, use SQLite
             if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
                 services.AddDbContext<TestContext>(options =>
-                        options.UseSqlServer(Configuration.GetConnectionString("APPSETTING_ConnectionsStrings:DefaultConnection")));
+                        options.UseSqlServer(Configuration.GetConnectionString("Server=tcp:alpha-cc.database.windows.net,1433;Initial Catalog=alpha-cc-db;Persist Security Info=False;User ID=alphaCCDbUser;Password=azCC1!User;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")));
 
             // Automatically perform database migration
             services.BuildServiceProvider().GetService<TestContext>().Database.Migrate();
