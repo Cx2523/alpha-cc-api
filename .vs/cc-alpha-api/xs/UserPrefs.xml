@@ -8,7 +8,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="cc-alpha-api" expanded="True">
-            <Node name="cc-alpha-api" expanded="True" selected="True" />
+            <Node name="cc-alpha-api" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
