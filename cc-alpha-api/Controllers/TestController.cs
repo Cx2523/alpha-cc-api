@@ -11,7 +11,7 @@ namespace cc_alpha_api.Controllers
     public class TestController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Test>> Get()
         {
             using(var db = new TestContext())
             {
