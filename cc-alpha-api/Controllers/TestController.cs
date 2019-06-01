@@ -11,13 +11,15 @@ namespace cc_alpha_api.Controllers
     public class TestController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<IEnumerable<Test>> Get()
+        public ActionResult<IEnumerable<string>> Get()
         {
-            using(var db = new TestContext())
-            {
-                var data = db.Tests.ToList();
-                return Ok(data);
-            }
+            // using(var db = new TestContext())
+            // {
+            //     var data = db.Tests.ToList();
+            //     return Ok(data);
+            // }
+            return new string[] { "test1", "test2", "test3", "test4", "test5", "string6", "string7", "string8" };
+
         }
     }
 }
