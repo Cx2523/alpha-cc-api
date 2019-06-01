@@ -28,7 +28,7 @@ namespace cc_alpha_api
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             // Use SQL Database if in Azure, otherwise, use SQLite
-            // services.AddDbContext<TestContext>();
+            services.AddDbContext<TestContext>();
 
             // Automatically perform database migration
             // services.BuildServiceProvider().GetService<TestContext>().Database.Migrate();
