@@ -15,7 +15,7 @@ namespace cc_alpha_api.Controllers
         {
             using(var db = new TestContext())
             {
-                var data = db.Test.ToList();
+                var data = db.Tests.ToList();
                 return Ok(data);
             }
         }
