@@ -9,7 +9,8 @@ namespace cc_alpha_api
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(System.Configuration.ConfigurationManager.AppSettings["ConnectionsStrings:DefaultConnection"]);
+            var connString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            optionsBuilder.UseSqlServer(connString);
             base.OnConfiguring(optionsBuilder);
         }
     }
