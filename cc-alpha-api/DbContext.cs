@@ -8,9 +8,7 @@ namespace cc_alpha_api
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(
-                "Server=tcp:alpha-cc.database.windows.net,1433;Initial Catalog=alpha-cc-db;Persist Security Info=False;User ID=TestUser;Password=azCCpw1!User;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
-            );
+            optionsBuilder.UseSqlServer("APPSETTING_ConnectionsStrings:DefaultConnection");
             base.OnConfiguring(optionsBuilder);
         }
     }
