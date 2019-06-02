@@ -2,14 +2,16 @@
   <MonoDevelop.Ide.ItemProperties.cc-alpha-api PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="cc-alpha-api/Controllers/ValuesController.cs">
     <Files>
-      <File FileName="cc-alpha-api/Controllers/ValuesController.cs" Line="9" Column="32" />
+      <File FileName="cc-alpha-api/Controllers/ValuesController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="cc-alpha-api" expanded="True">
-            <Node name="cc-alpha-api" expanded="True" selected="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="cc-alpha-api" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ValuesController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
