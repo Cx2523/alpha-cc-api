@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Configuration;
 namespace cc_alpha_api
 {
     public class TestContext : DbContext
