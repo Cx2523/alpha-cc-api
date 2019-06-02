@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace cc_alpha_api
 {
@@ -29,6 +30,9 @@ namespace cc_alpha_api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             // Use SQL Database if in Azure, otherwise, use SQLite
             services.AddDbContext<TestContext>();
+            services.AddSwaggerGen(s => {
+                s.SwaggerDoc("v1", new Info { Title = "Test Api", Version= "v1"});
+            });
 
             // Automatically perform database migration
             // services.BuildServiceProvider().GetService<TestContext>().Database.Migrate();
@@ -40,6 +44,12 @@ namespace cc_alpha_api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(s => {
+                    s.RoutePrefix = "test-api/v1/docs";
+                    s.DocumentTitle = "Azure Test Api";
+                    s.SwaggerEndpoint("/swagger/v1/swagger.json", "Azure Test Api");
+                });
             }
             else
             {
