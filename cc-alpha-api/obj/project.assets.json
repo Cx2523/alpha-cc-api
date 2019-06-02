@@ -12285,7 +12285,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.4",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Swashbuckle.AspNetCore",
+      "Swashbuckle.AspNetCore >= 4.0.1",
       "Swashbuckle.AspNetCore.Swagger >= 4.0.1",
       "System.Configuration.ConfigurationManager >= 4.5.0"
     ]
@@ -12352,7 +12352,7 @@
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[4.0.1, )"
           },
           "Swashbuckle.AspNetCore.Swagger": {
             "target": "Package",

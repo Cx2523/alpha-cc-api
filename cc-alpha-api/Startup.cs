@@ -30,8 +30,9 @@ namespace cc_alpha_api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             // Use SQL Database if in Azure, otherwise, use SQLite
             services.AddDbContext<TestContext>();
-            services.AddSwaggerGen(s => {
-                s.SwaggerDoc("v1", new Info { Title = "Test Api", Version= "v1"});
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1", new Info { Title = "Test Api", Version = "v1" });
             });
 
             // Automatically perform database migration
@@ -44,18 +45,20 @@ namespace cc_alpha_api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(s => {
-                    s.RoutePrefix = "test-api/v1/docs";
-                    s.DocumentTitle = "Azure Test Api";
-                    s.SwaggerEndpoint("/swagger/v1/swagger.json", "Azure Test Api");
-                });
             }
             else
             {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(s =>
+            {
+                s.RoutePrefix = "test-api/v1/docs";
+                s.DocumentTitle = "Azure Test Api";
+                s.SwaggerEndpoint("/swagger/v1/swagger.json", "Azure Test Api");
+            });
 
             app.UseHttpsRedirection();
             app.UseMvc();
